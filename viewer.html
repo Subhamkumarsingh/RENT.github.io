@@ -1,0 +1,66 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="scripts/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.0/firebase-database.js"></script>
+
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD-B_o1oETHUqwMfDBkaskOXIbnZ-By3Tg",
+            authDomain: "renerprise.firebaseapp.com",
+            databaseURL: "https://renerprise.firebaseio.com",
+            projectId: "renerprise",
+            storageBucket: "renerprise.appspot.com",
+            messagingSenderId: "245989905799",
+            appId: "1:245989905799:web:749d92cd8a51158a00af22"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+
+    </script>
+
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 style="text-align:center">Customer Records</h1>
+        </div>
+        <div>
+            <select id="dataView" class="dropdown-header" onchange="ShowHideData()">
+                <option>Choose Mode</option>
+                <option value="dataRenter">Renter Data</option>
+                <option value="dataHouse">House Data</option>
+            </select>
+        </div>
+        <div id="formParent">
+            <div id="dataRenter" style="display: none;">
+                Subham
+             </div>
+
+            <div id="dataHouse">
+                Pranav
+               </div>
+        </div>
+
+    </div>
+</body>
+</html>
